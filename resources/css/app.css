@@ -1,12 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: myFont;
-    src: url('Fontspring.otf');
-}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 body{
-    font-family:myFont;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
 }
 .header {
     background: #ffffff;
@@ -24,12 +27,16 @@ body{
 .header2 {
     background: #ffffff;
     border-radius:40px;
-    height: 200px;
+    height: 400vh;
     min-width: 300px;
     margin-left: 80px;
     margin-right:100px;
     padding-top: 40px;
 }
+.button{
+    display:inline;
+}
+
 
 .header3 {
     background: #e5e7eb;
@@ -194,6 +201,7 @@ body{
 }
 
 .my-profile-button1 {
+    display:inline;
     background-color: rgb(37, 37, 37);
     color: white;
     border: none;
@@ -287,6 +295,18 @@ color: #000;           /* Dark text */
 }
 
 .dark-mode .header3 {
-    background-color: #2e2e2e;
+    background-color: #555555;
     color: white;
 }
+.dark-mode .header2 h1 {
+    color: white;
+}
+.dark-mode .header2 h3 {
+    color: white;
+}
+.dark-mode .notes {
+    background-color:2E2E2E;
+}
+
+
+/* ADD NOTES */
