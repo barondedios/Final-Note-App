@@ -12,14 +12,13 @@
 		color: white;
 		height: 70px;
 		display: flex;
-		justify-content: center; /* Center the button horizontally */
-		align-items: center;     /* Center the button vertically */
+		justify-content: center; 
+		align-items: center;     
 		min-width: 180px;
 		margin-left: 80px;
 		margin-right:100px;
 		border-radius: 20px;
 	}
-
 	.header1{
 	margin:30px 10px;
 	display: flex;

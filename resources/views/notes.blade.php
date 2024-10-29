@@ -22,7 +22,7 @@
 		</a>
 		
 		<a href='task-tracker'>
-			<button class="task-tracker-button">Tracker</button>
+			<button class="task-tracker-button">Timer</button>
 		</a>
 
 		<a href='my-profile'>
@@ -31,7 +31,7 @@
 	</div>
 	<br>
 	<div class="header3">
-		<input type="text" id="search" placeholder="Search by title..." class="text-black border border-black bg-white px-4 -ml-6 py-2 rounded hover:bg-black hover:text-white" onkeyup="filterNotes()">
+		<input type="text" id="search" placeholder="Search by title..." class="text-black border border-black bg-white px-4 -ml-6 py-2 rounded hover:bg-black hover:text-white pl-15" onkeyup="filterNotes()">
 		<button id="toggleDarkMode" class="w-32 h-10 ml-2 text-black border border-black bg-white px-4 py-2 rounded hover:bg-black hover:text-white">Dark</button>
 	</div>
 <br>
@@ -45,13 +45,13 @@
 				<button class="my-profile-button">+</button>
 			</a>
 		</div>
-		<p class="text-gray-500 py-4 flex-1 items-center border-b border-gray-300"></p><br>
+		<p class="text-gray-500 py-4 flex-1 items-center border-b border-gray-300 pl-10"></p><br>
 		<div class="notes">
-			<div class="flex-1 pr-8">
+			<div class="flex-1 ml-15 ">
 			@foreach ($notes as $note)
-			<div class="note-item px-4 py-4">
+			<div class="note-item px-4 py-4 pl-10 pr-20">
 				<p class="text-gray-500 ">
-				<div class='flex-1 pr-8'>
+				<div class='flex-1 ml-15'>
 					<h3 class="text-lg font-semibold">
 						Title: <b>{{ $note->title }}</b>
 					</h3>

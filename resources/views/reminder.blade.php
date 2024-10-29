@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	
 <style>
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -24,178 +25,76 @@ body{
 	height: 70px;
 	display: flex;
 	border-radius: 20px;
-	justify-content: center; /* Center the button horizontally */
-	align-items: center;     /* Center the button vertically */
+	justify-content: center;
+	align-items: center;
+	margin: 10px 20px;
 	min-width: 300px;
-	margin-left: 80px;
-	margin-right:100px;
-
 }
-.header1{
-	margin:30px 10px;
+
+.header1 {
+	margin: 20px 5px;
 	display: flex;
 	justify-content: center;
-
 }
 
 .header2 {
 	background: #ffffff;
-	height: 500px;
+	height: auto;
 	min-width: 300px;
-	margin-left: 80px;
-	margin-right:100px;
-	padding-top: 40px;
-	padding-left:20px;
-	padding-right:20px;
-	margin-top:50px;
+	margin: 20px;
+	padding: 20px;
 	border-radius: 20px;
+}
 
+.noted-logo {
+	margin-left: 15px;
+	font-size: 24px;
 }
-      
-.noted-logo{
-	margin-left: 25px;
-	font-size: 30px;
-}
-.my-notes-button {
+
+.my-notes-button,
+.reminder-button,
+.task-tracker-button,
+.my-profile-button,
+.check-button {
 	background-color: white;
 	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
-	height: 30px;
-	width: 101px;
-	border-radius:2px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 2px;
 	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-
-}
-.reminder-button {
-	background-color: white;
-	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.15s;
+	width: 80px;
 	height: 30px;
-	width: 101px;
-	border-radius:2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-	margin-left: 10px;
-
-}
-
-.task-tracker-button {
-	background-color: white;
-	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
-	height: 30px;
-	width: 101px;
-	border-radius:2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-	margin-left: 10px;
+	margin: 5px;
+	font-size: 0.8rem;
 }
 
 .my-profile-button {
 	background-color: rgb(37, 37, 37);
 	color: white;
-	border: none;
-	height: 38px;
-	width: 108px;
-	border-radius: 2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	box-shadow 0.15s;
+	width: 90px;
+	height: 35px;
 }
 
 .check-button {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	border: none;
-	height: 30px;
 	width: 30px;
-	border-radius: 2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	box-shadow 0.15s;
+	height: 30px;
 }
 
-.my-profile-button:hover {
-
-	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35)
-
-}
-.my-profile-button:active {
-	background-color: gray;
-}
-
-.my-notes-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-
-}
-.my-notes-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}   
-
-.reminder-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-
-}
-.reminder-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}
-
-.task-tracker-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-
-}
-.task-tracker-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}		
-
-.check-button:hover {
-	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35)
-}
-
-.check-button:active {
-	background-color: gray;			
-}
-
+/* Dark Mode */
 body {
 	transition: background-color 0.3s, color 0.3s;
 }
+
 .dark-mode {
 	background-color: #555555;
 	color: black;
 }
+
 .dark-mode .bg-gray-600 {
 	background-color: #ffffff;
 }
-.dark-mode .bg-white {
-	background-color: #ffffff;
-}
-.dark-mode .header {
-	background-color: #2e2e2e;
-	color: black;
-}
 
+.dark-mode .header,
 .dark-mode .header2 {
 	background-color: #2e2e2e;
 	color: black;
@@ -206,15 +105,54 @@ body {
 	color: black;
 }
 
-.dark-mode .div1 {
+.dark-mode .div1, .dark-mode p {
 	background-color: #292929;
 	color: white;
 }
 
-.dark-mode p {
-	background-color: #292929;
+/* Hover States */
+.my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
+	background-color: rgb(37, 37, 37);
 	color: white;
+	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
 }
+
+.my-profile-button:hover {
+	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+	.header, .header2 {
+		margin: 30px 80px;
+		padding: 30px;
+	}
+
+	.header2 {
+		height: 500px;
+		padding-top: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.noted-logo {
+		margin-left: 25px;
+		font-size: 30px;
+	}
+
+	.my-notes-button, .reminder-button, .task-tracker-button {
+		width: 101px;
+		height: 30px;
+		font-size: 1rem;
+	}
+
+	.my-profile-button {
+		width: 108px;
+		height: 38px;
+	}
+}
+
+
 </style>
 </head>
 
@@ -231,7 +169,7 @@ body {
 		</a>
 		
 		<a href='task-tracker'>
-			<button class="task-tracker-button">Tracker</button>
+			<button class="task-tracker-button">Timer</button>
 		</a>
 
 		<a href='my-profile'>

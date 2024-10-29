@@ -24,8 +24,8 @@ body{
 	height: 70px;
 	display: flex;
 	border-radius: 20px;
-	justify-content: center; /* Center the button horizontally */
-	align-items: center;     /* Center the button vertically */
+	justify-content: center; 
+	align-items: center;     
 	min-width: 300px;
 	margin-left: 80px;
 	margin-right:100px;
@@ -304,7 +304,7 @@ body {
 		</a>
 		
 		<a href='task-tracker'>
-			<button class="task-tracker-button">Tracker</button>
+			<button class="task-tracker-button">Timer</button>
 		</a>
 
 		<a href='my-profile'>
@@ -349,7 +349,7 @@ body {
 		seconds = seconds < 10 ? '0' + seconds : seconds; 
 		countdownEl.innerHTML = `${minutes}:${seconds}`; 
 		if (time > 0) {
-			time--; // Decrement the time
+			time = time - 2;
 		} else {
 			clearInterval(countdownInterval); 
 			countdownEl.innerHTML = "Time's up!"; 
