@@ -112,7 +112,7 @@ body {
 	color: white;
 }
 
-/* Hover States */
+
 .my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
 	background-color: rgb(37, 37, 37);
 	color: white;
@@ -123,7 +123,6 @@ body {
 	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
 }
 
-/* Responsive Styling */
 @media (min-width: 768px) {
 	.header, .header2 {
 		margin: 30px 80px;
@@ -153,8 +152,6 @@ body {
 		height: 38px;
 	}
 }
-
-
 </style>
 </head>
 

@@ -7,6 +7,17 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel = "stylesheet">
     
 <style>
+	.poppins-regular {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	body {
+		font-family: "Poppins", sans-serif;
+		height: 100vh;
+		transition: background-color 0.3s, color 0.3s;
+	}
 	.header {
 		background: #ffffff;
 		color: white;
@@ -17,12 +28,16 @@
 		min-width: 180px;
 		margin-left: 80px;
 		margin-right:100px;
+		gap:20px;
+		border-radius: 20px;
+	}
+	.header button{
 		border-radius: 20px;
 	}
 	.header1{
-	margin:30px 10px;
-	display: flex;
-	justify-content: center;
+		margin:30px 10px;
+		display: flex;
+		justify-content: center;
 
 	}
 
@@ -36,11 +51,6 @@
 		padding-top: 40px;
 		padding-left: 20px;
 		padding-right: 20px;
-	}
-      
-    .noted-logo{
-			margin-left: 25px;
-			font-size: 30px;
 	}
 	.my-notes-button {
 		background-color: white;
@@ -243,7 +253,6 @@
 	}
 
 </style>
-
 </head>
 
 <body class = "bodyclass1">

@@ -49,11 +49,6 @@ body{
 	border-radius: 20px;
 }
 
-.noted-logo {
-	margin-left: 15px;
-	font-size: 24px;
-}
-
 .my-notes-button,
 .reminder-button,
 .task-tracker-button,
@@ -83,7 +78,6 @@ body{
 	height: 30px;
 }
 
-/* Dark Mode */
 body {
 	transition: background-color 0.3s, color 0.3s;
 }
@@ -124,7 +118,6 @@ body {
 	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
 }
 
-/* Responsive Styling */
 @media (min-width: 768px) {
 	.header, .header2 {
 		margin: 30px 80px;
@@ -154,11 +147,8 @@ body {
 		height: 38px;
 	}
 }
-
-
 </style>
 </head>
-
 
 <body class = "bg-gray-200 p-4 rounded-lg">
 <header>
@@ -183,6 +173,7 @@ body {
 		<button id="toggleDarkMode" class="flex items-center justify-center ml-2 text-black border border-black bg-white px-4 py-2 rounded hover:bg-black hover:text-white">Dark Mode</button>
 	</div>
 </header>
+
 <section>
 	<div class="header2">
         <h1 class="font-bold text-5xl text-center mb-8"> 🔔Reminder </h1>

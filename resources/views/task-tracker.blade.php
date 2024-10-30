@@ -47,11 +47,6 @@ body{
 .header2 p {
 	align-items: center;
 }
-
-.noted-logo {
-	margin-left: 15px;
-	font-size: 24px;
-}
 .header button{
 	border-radius: 10px;
 }
@@ -80,9 +75,6 @@ body{
 	height: 35px;
 }
 
-
-
-
 .my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
 	background-color: rgb(37, 37, 37);
 	color: white;
@@ -92,8 +84,6 @@ body{
 .my-profile-button:hover {
 	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
 }
-
-
 @media (min-width: 768px) {
 	.header, .header2 {
 		margin: 30px 80px;
@@ -106,18 +96,11 @@ body{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
-	.noted-logo {
-		margin-left: 25px;
-		font-size: 30px;
-	}
-
 	.my-notes-button, .reminder-button, .task-tracker-button {
 		width: 101px;
 		height: 30px;
 		font-size: 1rem;
 	}
-
 	.my-profile-button {
 		width: 108px;
 		height: 38px;
@@ -178,7 +161,6 @@ button:hover {
 #restart-btn:hover {
     background-color: #c9302c;
 }
-
 
 @media (max-width: 768px) {
     #countdown {

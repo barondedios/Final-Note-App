@@ -9,118 +9,117 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	
 <style>
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-body{
-	border-radius: 20px;
-	font-family: "Poppins", sans-serif;
-}
-.header {
-	background: #ffffff;
-	color: white;
-	height: 70px;
-	display: flex;
-	border-radius: 20px;
-	justify-content: center;
-	align-items: center;
-	margin: 10px 20px;
-	min-width: 300px;
-}
+	.poppins-regular {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+	body{
+		border-radius: 20px;
+		font-family: "Poppins", sans-serif;
+	}
+	.header {
+		background: #ffffff;
+		color: white;
+		height: 70px;
+		display: flex;
+		border-radius: 20px;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 20px;
+		min-width: 300px;
+	}
 
-.header1 {
-	margin: 20px 5px;
-	display: flex;
-	justify-content: center;
-}
+	.header1 {
+		margin: 20px 5px;
+		display: flex;
+		justify-content: center;
+	}
 
-.header2 {
-	background: #ffffff;
-	height: auto;
-	min-width: 300px;
-	margin: 20px;
-	padding: 20px;
-	border-radius: 20px;
-}
+	.header2 {
+		background: #ffffff;
+		height: auto;
+		min-width: 300px;
+		margin: 20px;
+		padding: 20px;
+		border-radius: 20px;
+	}
 
-.noted-logo {
-	margin-left: 15px;
-	font-size: 24px;
-}
+	.noted-logo {
+		margin-left: 15px;
+		font-size: 24px;
+	}
 
-.my-notes-button,
-.reminder-button,
-.task-tracker-button,
-.my-profile-button,
-.check-button {
-	background-color: white;
-	color: rgb(0, 0, 0);
-	border: 1px solid rgb(0, 0, 0);
-	border-radius: 2px;
-	cursor: pointer;
-	transition: background-color 0.2s, color 0.2s, box-shadow 0.15s;
-	width: 80px;
-	height: 30px;
-	margin: 5px;
-	font-size: 0.8rem;
-}
+	.my-notes-button,
+	.reminder-button,
+	.task-tracker-button,
+	.my-profile-button,
+	.check-button {
+		background-color: white;
+		color: rgb(0, 0, 0);
+		border: 1px solid rgb(0, 0, 0);
+		border-radius: 2px;
+		cursor: pointer;
+		transition: background-color 0.2s, color 0.2s, box-shadow 0.15s;
+		width: 80px;
+		height: 30px;
+		margin: 5px;
+		font-size: 0.8rem;
+	}
 
-.my-profile-button {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	width: 90px;
-	height: 35px;
-}
+	.my-profile-button {
+		background-color: rgb(37, 37, 37);
+		color: white;
+		width: 90px;
+		height: 35px;
+	}
 
-.check-button {
-	width: 30px;
-	height: 30px;
-}
+	.check-button {
+		width: 30px;
+		height: 30px;
+	}
 
-/* Dark Mode */
-body {
-	transition: background-color 0.3s, color 0.3s;
-}
 
-.dark-mode {
-	background-color: #555555;
-	color: black;
-}
+	body {
+		transition: background-color 0.3s, color 0.3s;
+	}
 
-.dark-mode .bg-gray-600 {
-	background-color: #ffffff;
-}
+	.dark-mode {
+		background-color: #555555;
+		color: black;
+	}
 
-.dark-mode .header,
-.dark-mode .header2 {
-	background-color: #2e2e2e;
-	color: black;
-}
+	.dark-mode .bg-gray-600 {
+		background-color: #ffffff;
+	}
 
-.dark-mode .my-profile-button {
-	background-color: #ffffff;
-	color: black;
-}
+	.dark-mode .header,
+	.dark-mode .header2 {
+		background-color: #2e2e2e;
+		color: black;
+	}
 
-.dark-mode .div1, .dark-mode p {
-	background-color: #292929;
-	color: white;
-}
+	.dark-mode .my-profile-button {
+		background-color: #ffffff;
+		color: black;
+	}
 
-/* Hover States */
-.my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-}
+	.dark-mode .div1, .dark-mode p {
+		background-color: #292929;
+		color: white;
+	}
 
-.my-profile-button:hover {
-	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
-}
 
-/* Responsive Styling */
+	.my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
+		background-color: rgb(37, 37, 37);
+		color: white;
+		box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
+	}
+
+	.my-profile-button:hover {
+		box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
+	}
+
 @media (min-width: 768px) {
 	.header, .header2 {
 		margin: 30px 80px;
