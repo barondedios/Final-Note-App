@@ -30,6 +30,9 @@ body{
 	margin: 10px 20px;
 	min-width: 300px;
 }
+.header button{
+	border-radius: 10px;
+}
 
 .header1 {
 	margin: 20px 5px;

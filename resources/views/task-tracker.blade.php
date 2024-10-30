@@ -24,273 +24,204 @@ body{
 	height: 70px;
 	display: flex;
 	border-radius: 20px;
-	justify-content: center; 
-	align-items: center;     
+	justify-content: center;
+	align-items: center;
+	margin: 10px 20px;
 	min-width: 300px;
-	margin-left: 80px;
-	margin-right:100px;
-
 }
-.header1{
-	margin:30px 10px;
+
+.header1 {
+	margin: 20px 5px;
 	display: flex;
 	justify-content: center;
-
 }
 
 .header2 {
 	background: #ffffff;
-	height: 500px;
+	height: auto;
 	min-width: 300px;
-	margin-left: 80px;
-	margin-right:100px;
-	padding-top: 40px;
-	padding-left:20px;
-	padding-right:20px;
-	margin-top:50px;
+	margin: 20px;
+	padding: 20px;
 	border-radius: 20px;
+}
+.header2 p {
+	align-items: center;
+}
 
+.noted-logo {
+	margin-left: 15px;
+	font-size: 24px;
 }
-      
-.noted-logo{
-	margin-left: 25px;
-	font-size: 30px;
+.header button{
+	border-radius: 10px;
 }
-.my-notes-button {
+
+.my-notes-button,
+.reminder-button,
+.task-tracker-button,
+.my-profile-button,
+.check-button {
 	background-color: white;
 	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
-	height: 30px;
-	width: 101px;
-	border-radius:2px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 2px;
 	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-
-}
-.reminder-button {
-	background-color: white;
-	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.15s;
+	width: 80px;
 	height: 30px;
-	width: 101px;
-	border-radius:2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-	margin-left: 10px;
-
-}
-
-.task-tracker-button {
-	background-color: white;
-	color: rgb(0, 0, 0);
-	border-color: rgb(0, 0, 0);
-	border-style: solid;
-	border-width: 1px;
-	height: 30px;
-	width: 101px;
-	border-radius:2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	color 0.2s, box-shadow 0.15s;
-	margin-left: 10px;
+	margin: 5px;
+	font-size: 0.8rem;
 }
 
 .my-profile-button {
 	background-color: rgb(37, 37, 37);
 	color: white;
-	border: none;
-	height: 38px;
-	width: 108px;
-	border-radius: 2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	box-shadow 0.15s;
+	width: 90px;
+	height: 35px;
 }
 
-.check-button {
+
+
+
+.my-notes-button:hover, .reminder-button:hover, .task-tracker-button:hover {
 	background-color: rgb(37, 37, 37);
 	color: white;
-	border: none;
-	height: 30px;
-	width: 30px;
-	border-radius: 2px;
-	cursor: pointer;
-	transition: background-color 0.2s,
-	box-shadow 0.15s;
+	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
 }
 
 .my-profile-button:hover {
-
-	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35)
-
-}
-.my-profile-button:active {
-	background-color: gray;
+	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35);
 }
 
-.my-notes-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
 
-}
-.my-notes-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}   
-
-.reminder-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-
-}
-.reminder-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}
-
-.task-tracker-button:hover {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.35);
-
-}
-.task-tracker-button:active {
-	opacity: 0.7s;
-	background-color: gray;
-	border: none;
-}		
-
-.check-button:hover {
-	box-shadow: 5px 5px 10px rgba(63,63,63, 0.35)
-}
-
-.check-button:active {
-	background-color: gray;			
-}
-
-body {
-	transition: background-color 0.3s, color 0.3s;
-}
-.dark-mode {
-	background-color: #555555;
-	color: black;
-}
-.dark-mode .bg-gray-600 {
-	background-color: #ffffff;
-}
-.dark-mode .bg-white {
-	background-color: #ffffff;
-}
-.dark-mode .header {
-	background-color: #2e2e2e;
-	color: black;
-}
-
-.dark-mode .header2 {
-	background-color: #2e2e2e;
-	color: black;
-}
-
-.dark-mode .my-profile-button {
-	background-color: #ffffff;
-	color: black;
-}
-
-.dark-mode .div1 {
-	background-color: #292929;
-	color: white;
-}
-
-.dark-mode p {
-	background-color: #292929;
-	color: white;
-}
-.timer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		margin-top: 20px;
+@media (min-width: 768px) {
+	.header, .header2 {
+		margin: 30px 80px;
+		padding: 30px;
 	}
 
 	.header2 {
-		text-align: center;            
-		padding: 20px;                   
-		background-color: white;          
-		border-radius: 10px;             
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+		height: 500px;
+		padding-top: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
-	#countdown {
-		font-size: 48px;                
-		color: #FF5733;                  
-		background-color: #F0F0F0;       
-		padding: 20px;                   
-		border: 2px solid #FF5733;       
-		border-radius: 10px;             
-		margin: 20px 0;                  
-		transition: transform 0.3s;      
+	.noted-logo {
+		margin-left: 25px;
+		font-size: 30px;
 	}
 
-	#countdown:hover {
-		transform: scale(1.05);          
+	.my-notes-button, .reminder-button, .task-tracker-button {
+		width: 101px;
+		height: 30px;
+		font-size: 1rem;
 	}
 
-	.timer {
-		display: flex;                   
-		justify-content: center;         
-		gap: 10px;                       
+	.my-profile-button {
+		width: 108px;
+		height: 38px;
 	}
+}
+#countdown {
+    font-size: 48px;                
+    color: #FF5733;                  
+    background-color: #F0F0F0;       
+    padding: 20px;                   
+    border: 2px solid #FF5733;       
+    border-radius: 10px;             
+    margin: 20px 0;                  
+    transition: transform 0.3s;      
+}
 
-	
-	button:hover {
-		background-color: #e74c3c;      
-	}
+#countdown:hover {
+    transform: scale(1.05);          
+}
 
-	.timer button {
-		background-color: #4CAF50; 
-		color: white; 
-		border: none;
-		padding: 10px 20px;
-		font-size: 16px;
-		border-radius: 5px;
-		cursor: pointer;
-		transition: background-color 0.3s ease;
-	}
-	
-	.timer button:hover {
-		background-color: #45a049;
-	}
+.timer {
+    display: flex;                   
+    justify-content: center;         
+    gap: 10px;                       
+}
 
-	#pause-btn {
-		background-color: #f0ad4e; /* Orange background */
-	}
+button:hover {
+    background-color: #e74c3c;      
+}
 
-	#pause-btn:hover {
-		background-color: #ec9a29;
-	}
+.timer button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-	#restart-btn {
-		background-color: #d9534f; /* Red background */
-	}
+.timer button:hover {
+    background-color: #45a049;
+}
 
-	#restart-btn:hover {
-		background-color: #c9302c;
-	}
+#pause-btn {
+    background-color: #f0ad4e;
+}
+
+#pause-btn:hover {
+    background-color: #ec9a29;
+}
+
+#restart-btn {
+    background-color: #d9534f;
+}
+
+#restart-btn:hover {
+    background-color: #c9302c;
+}
+
+
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 32px;       
+        padding: 15px;         
+        margin: 15px 0;     
+		margin-left: auto;
+    }
+
+    .timer button {
+        padding: 8px 16px;     
+        font-size: 14px;       
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown {
+        font-size: 24px;       
+        padding: 10px;        
+        margin: 10px 0;    
+		width: 100%;
+	}   
+
+    .timer {
+        flex-direction: column; 
+        gap: 8px; 
+	}              
+
+    .timer button {
+        padding: 6px 12px;     
+        font-size: 12px;     
+    }
+}
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; 
+}
 
 </style>
-</head>
 
+</head>
 
 <body class = "bg-gray-200 p-4 rounded-lg">
 <header>
@@ -311,9 +242,7 @@ body {
 			<button class="task-tracker-button">Profile</button>
 		</a>
 	</div>
-	<div class="header1">
-		<button id="toggleDarkMode" class=" flex items-center justify-center ml-2 text-black border border-black bg-white px-4 py-2 rounded hover:bg-black hover:text-white">Dark Mode</button>
-	</div>
+	
 </header>
 <section>
 	<div class="header2">
@@ -328,10 +257,8 @@ body {
 </section>
     
 <script>
-	const toggleDarkMode = document.getElementById('toggleDarkMode');
-		toggleDarkMode.addEventListener('click', () => {
-		document.body.classList.toggle('dark-mode');
-	});
+	
+
 	const startingMinutes = 25;
 	let time = startingMinutes * 60;
 	let countdownInterval;
@@ -371,9 +298,9 @@ body {
 		time = startingMinutes * 60; 
 		updateCountdown(); 
 	});
+	
 </script>
-</body>
-  
-</html>
+
+
 
 

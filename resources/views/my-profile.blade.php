@@ -29,7 +29,9 @@ body{
 	margin: 10px 20px;
 	min-width: 300px;
 }
-
+.header button{
+	border-radius: 10px;
+}
 .header1 {
 	margin: 20px 5px;
 	display: flex;
@@ -154,8 +156,8 @@ body {
 	}
 }
 </style>
-</head>
 
+</head>
 
 <body class = "bg-gray-200 p-4 rounded-lg">
 <header>
@@ -184,7 +186,7 @@ body {
 	<div class="header2">
 		<h1 class="font-bold text-5xl text-center mb-8"> My Profile</h1>
 		<p class="text-center">Under Maintanance</p>
-		
+	</div>
 </section>
     
 <script>
@@ -194,8 +196,7 @@ body {
 	});
 	
 </script>
-</body>
-  
-</html>
+
+
 
 
