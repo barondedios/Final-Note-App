@@ -180,15 +180,17 @@
 </header>
 <section>
 	<div class="header2">
-        <h1 class="font-bold text-5xl text-center mb-8"> Add Notes </h1>
+        <h1 class="font-bold text-5xl text-center mb-8">Notes </h1>
         <div class="mb-6">
-        	<form class="flex flex-col space-y-4" method="POST" action="{{ route('storeNote')}}">
+
+        	<form class="flex flex-col space-y-4" method="POST" action="{{ route('updateNote',['id'=>$note->id])}}">
 				@csrf
-				@method('POST')
-				<input type="text" id='title' name="title" placeholder="Add Notes" class="py-3 px-4 bg-gray-100" value="{{$note->title}}">
+				@method('put')
+				<input type="text" id='title' name="title" class="py-3 px-4 bg-gray-100" value="{{$note->title}}">
 				<textarea id='desc' name="desc" placeholder= "Note Description" class="  py-3 px-4 bg-gray-100"> {{$note->desc}}</textarea>
 				<button type='submit' class="my-profile-button">UPDATE </button>
         	</form>
+
    		</div>    
 	</div>
 </section>

@@ -32,7 +32,7 @@
 	<br>
 	<div class="header3">
 		<input type="text" id="search" placeholder="Search by title..." class="text-black border border-black bg-white px-4 -ml-6 py-2 rounded hover:bg-black hover:text-white pl-15" onkeyup="filterNotes()">
-		<button id="toggleDarkMode" class="w-32 h-10 ml-2 text-black border border-black bg-white px-4 py-2 rounded hover:bg-black hover:text-white">Dark</button>
+		<button id="toggleDarkMode" class="pl-2 w-32 h-10 ml-2 text-black border border-black bg-white px-4 py-2 rounded hover:bg-black hover:text-white">Dark</button>
 	</div>
 <br>
 </header>

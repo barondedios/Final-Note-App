@@ -13,7 +13,7 @@
 		font-style: normal;
 	}
 
-	body {
+	body.bodyclass1 {
 		font-family: "Poppins", sans-serif;
 		height: 100vh;
 		transition: background-color 0.3s, color 0.3s;
